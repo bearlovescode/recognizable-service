@@ -47,11 +47,8 @@
          */
         public function handleAccountResource(string $rsrc): WebfingerResource
         {
-            // extract username
-            list($username, $host) = explode('@', $rsrc);
-
             // retrive user record.
-            return $this->webfingerService->findUserResourceByUsername($username);
+            return $this->webfingerService->findUserResource($rsrc);
         }
 
 
