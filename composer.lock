@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56c29e4eba9b27011313db9ee8a22c83",
+    "content-hash": "eccd6001a30473ed858736206e47a8b0",
     "packages": [
         {
             "name": "bearlovescode/datamodels",

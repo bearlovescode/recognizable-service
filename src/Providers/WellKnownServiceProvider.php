@@ -9,10 +9,12 @@
     class WellKnownServiceProvider extends ServiceProvider
     {
         public function boot() {}
-        public function register() {
+        public function register()
+        {
+            parent::register();
+
             $this->handleMigrations();
             $this->handleRoutes();
-
             $this->setUpServices();
         }
 
