@@ -1,16 +1,34 @@
 {
-    "name": "bearlovescode/laravel-well-known",
+    "name": "bearlovescode/recognizable-service",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Bearlovescode\\LaravelWellKnown\\": "src/"
+            "Bearlovescode\\RecognizableService\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Nic Barr",
-            "email": "1134853+theothernic@users.noreply.github.com"
+            "email": "code@bearlovescode.com"
         }
     ],
-    "require": {}
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/bearlovescode/datamodels.git"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^10.47",
+        "illuminate/http": "^10.47",
+        "illuminate/database": "^10.38",
+        "bearlovescode/datamodels": "^1.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bearlovescode\\RecognizableService\\Providers\\WellKnownServiceProvider"
+            ]
+        }
+    }
 }
