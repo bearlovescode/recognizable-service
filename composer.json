@@ -1,0 +1,16 @@
+{
+    "name": "bearlovescode/laravel-well-known",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Bearlovescode\\LaravelWellKnown\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nic Barr",
+            "email": "1134853+theothernic@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
