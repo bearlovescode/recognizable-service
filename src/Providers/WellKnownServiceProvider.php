@@ -32,11 +32,11 @@
 
         private function handleMigrations(): void
         {
-            $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+            $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
         }
 
         private function handleRoutes(): void
         {
-            $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+            $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
         }
     }
