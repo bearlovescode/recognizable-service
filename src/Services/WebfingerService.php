@@ -15,7 +15,7 @@
         public function findUserResourceByUsername(string $username): WebfingerResource
         {
 
-            if (!User::where('username', $username)->exists())
+            if (!\App\Models\User::where('username', $username)->exists())
                 throw new WebfingerResourceNotFoundException();
 
             $trans = [
