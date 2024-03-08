@@ -24,15 +24,16 @@
                 '{host}' => $this->config->host
             ];
 
-            return new WebfingerResource([
+            $rsrc = new WebfingerResource([
                 'subject' => strtr($this->config->subjectTemplate, $trans),
-                'link' => [
-                    new Link([
-                        'rel' => 'self',
-                        'type' => 'application/activity+json',
-                        'href' => strtr($this->config->hrefTemplate, $trans)
-                    ])
-                ]
             ]);
+
+            $rsrc->addLink(new Link([
+                'rel' => 'self',
+                'type' => 'application/activity+json',
+                'href' => strtr($this->config->hrefTemplate, $trans)
+            ]));
+
+            return $rsrc;
         }
     }
