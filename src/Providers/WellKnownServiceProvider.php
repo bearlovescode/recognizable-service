@@ -37,6 +37,6 @@
 
         private function handleRoutes(): void
         {
-            $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
+            $this->loadRoutesFrom(__DIR__ . '/../../routes/well-known.php');
         }
     }
