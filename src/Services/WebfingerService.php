@@ -31,7 +31,7 @@
             $rsrc->addLink(new Link([
                 'rel' => 'self',
                 'type' => 'application/activity+json',
-                'href' => strtr($this->config->hrefTemplate, $trans)
+                'href' => strtr($this->config->hrefTemplate, $trans),
             ]));
 
             return $rsrc;
