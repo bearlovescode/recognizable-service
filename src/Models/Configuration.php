@@ -9,5 +9,5 @@
 
         // webfinger.
         public string $hrefTemplate = 'https://{host}/@{username}';
-        public string $subjectTemplate = 'acct:{username}@{host}';
+        public string $subjectTemplate = '{type}:{username}@{host}';
     }

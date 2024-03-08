@@ -23,6 +23,7 @@
                 throw new WebfingerResourceNotFoundException();
 
             $trans = [
+                '{type}' => 'acct',
                 '{username}' => $username,
                 '{host}' => $this->config->host
             ];

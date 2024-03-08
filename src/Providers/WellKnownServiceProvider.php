@@ -22,7 +22,9 @@
         {
             // Webfinger.
             $webfingerConfig = new Configuration([
-                'host' => Request::getHost()
+                'host' => Request::getHost(),
+                'hrefTemplate' => config('wellknown.templates.href', 'https://{host}/@{username}'),
+                'subjectTemplate' => config('wellknown.templates.subject', '{type}:{username}@{host}')
             ]);
             $this->app->singleton(WebfingerService::class, function () use ($webfingerConfig) {
                 return new WebfingerService($webfingerConfig);
